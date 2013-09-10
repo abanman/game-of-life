@@ -21,10 +21,18 @@ public class HighLife implements RuleSet{
      *
      */
     public boolean applyRules(boolean isAlive, int neighborCount) {
-        if (isAlive && neighborCount < 2) isAlive = false;
-        if (isAlive && neighborCount == 3 || isAlive && neighborCount == 2) isAlive = true;
-        if (isAlive && neighborCount > 3) isAlive = false;
-        if (!isAlive && (neighborCount == 3 || neighborCount == 6)) isAlive = true;
+        if (isAlive && neighborCount < 2) {
+            isAlive = false;
+        }
+        if (isAlive && neighborCount == 3 || isAlive && neighborCount == 2) {
+            isAlive = true;
+        }
+        if (isAlive && neighborCount > 3) {
+            isAlive = false;
+        }
+        if (!isAlive && (neighborCount == 3 || neighborCount == 6)) {
+            isAlive = true;
+        }
         //if (!isAlive && neighborCount == 6) isAlive = true;
 
 
