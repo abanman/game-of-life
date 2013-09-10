@@ -68,7 +68,7 @@ public class HighLifeTest {
         public void testStayDead() {
             assertFalse(rules.applyRules(false, 2));
             assertFalse(rules.applyRules(false, 4));
-            assertFalse(rules.applyRules(false, 6));
+            assertFalse(rules.applyRules(false, 7));
             assertFalse(rules.applyRules(false, 8));
         }
 
