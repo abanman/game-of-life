@@ -19,6 +19,12 @@ public class Conway implements RuleSet {
      * 
      */
     public boolean applyRules(boolean isAlive, int neighborCount) {
-        return false; // TODO: replace this with the correct rules
+        if (isAlive && neighborCount < 2) isAlive = false;
+        if (isAlive && neighborCount == 3 || isAlive && neighborCount == 2) isAlive = true;
+        if (isAlive && neighborCount > 3) isAlive = false;
+        if (!isAlive && neighborCount == 3) isAlive = true;
+
+
+        return isAlive;
     }
 }
