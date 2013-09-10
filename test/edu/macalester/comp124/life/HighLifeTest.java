@@ -3,7 +3,8 @@ package edu.macalester.comp124.life;
 import org.junit.Before;
 import org.junit.Test;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
 
 /**
  * Created with IntelliJ IDEA.
